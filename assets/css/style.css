@@ -98,6 +98,38 @@
 }
 
 #portfolio .image {
-  max-height: 200px;
+  height: 300px;
   overflow: hidden;
+}
+#portfolio .image img{
+  width: auto;
+  overflow: hidden;
+  -webkit-transition: all ease 0.5s;
+  filter: grayscale(100%);
+}
+#portfolio .image img:hover{
+  filter: none;
+}
+.tilted-left {
+  transform: rotate(-3deg);
+}
+
+.tilted-right {
+  transform: rotate(3deg);
+}
+
+
+div [class*="left-floated"] {
+  float: left;
+  margin-left: 0.25em;
+}
+
+div [class*="right-floated"] {
+  float: right;
+   margin-right: 0.25em;
+}
+
+.folding.masthead{
+  background: url('../../assets/images/background.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
 }
